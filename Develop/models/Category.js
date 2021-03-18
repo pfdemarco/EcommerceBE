@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
-const Product = require('./Product');
+// const Product = require('./Product');
 
 class Category extends Model {}
 
@@ -28,5 +28,5 @@ Category.init(
   }
 );
 
-Category.hasMany(Product, {onDelete: 'CASCADE'});
+// Category.hasMany(Product, {onDelete: 'CASCADE'});
 module.exports = Category;
